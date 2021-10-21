@@ -18,6 +18,18 @@
 // const  min1=arr.reduce(min)
 // const arr1=[max1,min1]
 // console.log(arr1)
+// ######################################## or (1400.07.21) ##########################################
+let minmax = [-5, -3, 0, 2, 3, 9, 7, -1, -7]
+function minMax(arr){
+    let max = 0
+    let min = 0
+    for(let item = 0; item < arr.length; item++){
+        if(arr[item] >= max) max = arr[item]
+        if(arr[item] <= min) min = arr[item]
+    }
+    return {min , max}
+}
+console.log(minMax(minmax))
 // ########################################### 2 (1400.07.21) ############################################
 // let Numbers = [1,1,1,2,2,2,3,3,3,3,4,4,4]
 // let countedNumber = Numbers.reduce(function (allNumber, Number) {
@@ -42,11 +54,11 @@
 // const arr = [1,1,1,2,2,2,3,3,3,3,4,4,4]
 // console.log(Numbers(arr))
 // ########################################### or (1400.07.21) ##############################################
-const arr = [1,1,1,2,2,2,3,3,3,3,4,4,4]
-const  Numbers=(arr)=>{
-    return arr.reduce((prev, current) =>{
-        prev[current]=!prev[current]?1:prev[current]+1
-        return prev
-    },{})
-}
-console.log(Numbers(arr))
+// const arr = [1,1,1,2,2,2,3,3,3,3,4,4,4]
+// const  Numbers=(arr)=>{
+//     return arr.reduce((prev, current) =>{
+//         prev[current]=!prev[current]?1:prev[current]+1
+//         return prev
+//     },{})
+// }
+// console.log(Numbers(arr))
